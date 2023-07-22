@@ -23,6 +23,7 @@ public class AIControl : MonoBehaviour
     {
         agent = this.GetComponent<NavMeshAgent>();
         playerMovement = target.GetComponent<WASDMovement>();
+        Application.targetFrameRate = 60;
     }
     
     void Seek(Vector3 location)

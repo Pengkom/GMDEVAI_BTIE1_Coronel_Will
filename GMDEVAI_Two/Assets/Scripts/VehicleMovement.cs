@@ -15,7 +15,12 @@ public class VehicleMovement : MonoBehaviour
     public float maxSpeed = 10;
     public float breakAngle = 20;
 
-    void LateUpdate() //EVERY FRAME
+    private void Start()
+    {
+        Application.targetFrameRate = 60;
+    }
+
+    void LateUpdate() 
     {
         //LookAt but disregard goal's posY by looking at self posY
         Vector3 lookAtGoal = new Vector3(goal.position.x, this.transform.position.y, goal.position.z);

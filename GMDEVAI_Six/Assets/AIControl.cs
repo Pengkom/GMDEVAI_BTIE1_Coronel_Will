@@ -24,6 +24,7 @@ public class AIControl : MonoBehaviour
     
     void Start()
     {
+        Application.targetFrameRate = 60;
         goalLocations = GameObject.FindGameObjectsWithTag("goal");
         agent = this.GetComponent<NavMeshAgent>();
         animator = this.GetComponent<Animator>();

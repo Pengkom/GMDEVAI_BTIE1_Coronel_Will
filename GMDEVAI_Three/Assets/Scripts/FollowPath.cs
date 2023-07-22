@@ -19,6 +19,7 @@ public class FollowPath : MonoBehaviour
         wps = wpManager.GetComponent<WaypointManager>().waypoints;
         graph = wpManager.GetComponent<WaypointManager>().graph;
         currentNode = wps[0];
+        Application.targetFrameRate = 60;
     }
     
     void LateUpdate()

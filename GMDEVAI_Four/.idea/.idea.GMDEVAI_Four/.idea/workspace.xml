@@ -31,6 +31,14 @@
   }
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../../BuildToSubmit/CORONEL_Module4_Build\GMDEVAI_Four.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="D:\Storage\Classes\GMDEVAI\BuildToSubmit\CORONEL_Module4_Build" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="D:\Dev Softwares\Unity\2021.3.24f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath D:\Storage\Classes\GMDEVAI\GMDEVAI_BTIE1_Coronel_Will\GMDEVAI_Four -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
@@ -70,6 +78,7 @@
       <updated>1686939926635</updated>
       <workItem from="1686939932094" duration="1039000" />
       <workItem from="1686992778074" duration="1507000" />
+      <workItem from="1689996570765" duration="1826000" />
     </task>
     <servers />
   </component>

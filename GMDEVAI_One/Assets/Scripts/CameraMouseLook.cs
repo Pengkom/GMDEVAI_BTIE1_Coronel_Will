@@ -19,7 +19,7 @@ public class CameraMouseLook : MonoBehaviour
         //Lock cursor to window & hide cursor (Might be redundant)
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-        
+        Application.targetFrameRate = 60;
     }
 
     private void LateUpdate()

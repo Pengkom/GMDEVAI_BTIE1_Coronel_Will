@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour
         _rigidbody = GetComponent<Rigidbody>();
         //Stop capsule from toppling
         _rigidbody.freezeRotation = true;
+        Application.targetFrameRate = 60;
     }
 
     private void LateUpdate()

@@ -11,6 +11,7 @@ public class HealthComponent : MonoBehaviour
     void Start()
     {
         currentHealth = maxHealth;
+        Application.targetFrameRate = 60;
     }
 
     void TakeDamage()
