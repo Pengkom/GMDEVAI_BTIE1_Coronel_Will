@@ -1,11 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class ZombieAI : MonoBehaviour
 {
-    private Animator anim;
-    public GameObject player;
+    [SerializeField] private GameObject player;
+
+    [SerializeField] private float detectionRadius = 5;
+
+    private NavMeshAgent agent;
+    private Animator animator;
 
     public GameObject GetPlayer()
     {
@@ -14,12 +17,26 @@ public class ZombieAI : MonoBehaviour
 
     private void Start()
     {
-        anim = this.GetComponent<Animator>();
+        agent = GetComponent<NavMeshAgent>();
+        animator = GetComponent<Animator>();
     }
 
     private void Update()
     {
-        anim.SetFloat("distance", Vector3.Distance(transform.position, player.transform.position));
-        //anim.SetFloat("health", this.GetComponent<HealthComponent>().currentHealth);
+        animator.SetFloat("Distance", Vector3.Distance(transform.position, player.transform.position));
+    }
+
+    public void DetectNewTarget(Vector3 location)
+    {
+        if (Vector3.Distance(location, this.transform.position) < detectionRadius)
+        {
+            NavMeshPath path = new NavMeshPath();
+            agent.CalculatePath(location, path);
+
+            if (path.status != NavMeshPathStatus.PathInvalid)
+            {
+                agent.SetDestination(path.corners[path.corners.Length - 1]);
+            }
+        }
     }
 }

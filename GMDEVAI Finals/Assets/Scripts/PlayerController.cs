@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private GameObject sneakText;
-    
+
+    [SerializeField] private GameObject stonePrefab;
+    [SerializeField] private Transform stoneSpawnPoint;
+
     [SerializeField] private float rotationSpeed;
     [SerializeField] private float defaultSpeed;
     [SerializeField] private float currentSpeed;
@@ -25,6 +25,7 @@ public class PlayerController : MonoBehaviour
     private void LateUpdate()
     {
         Sneak();
+        Throw();
         WASDMovement();
     }
 
@@ -51,6 +52,15 @@ public class PlayerController : MonoBehaviour
             sneakText.SetActive(false);
             currentSpeed = defaultSpeed;
             sneaking = false;
+        }
+    }
+
+    private void Throw()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            GameObject stone = Instantiate(stonePrefab, stoneSpawnPoint.position, Quaternion.identity);
+            stone.GetComponent<Rigidbody>().AddForce(transform.forward * 500);
         }
     }
 }

@@ -10,7 +10,7 @@ public class AIPatrol : NPCBaseFSM
 
     private void Awake()
     {
-        waypoints = GameObject.FindGameObjectsWithTag("waypoint");
+        waypoints = GameObject.FindGameObjectsWithTag("Waypoint");
     }
 
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)

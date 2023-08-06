@@ -142,6 +142,10 @@ PrefabInstance:
       propertyPath: rotationSpeed
       value: 2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 4700853188478218574, guid: eb4a328115b460445b5f5ce3474f46f2, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6249990309180829134, guid: eb4a328115b460445b5f5ce3474f46f2, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -152,7 +156,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6249990309180829134, guid: eb4a328115b460445b5f5ce3474f46f2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6249990309180829134, guid: eb4a328115b460445b5f5ce3474f46f2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -439,6 +443,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1982769009}
     - target: {fileID: 3688582061812376052, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: m_Controller
       value: 
@@ -457,15 +465,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3688582061819596722, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 18.012526
+      value: 15.36
       objectReference: {fileID: 0}
     - target: {fileID: 3688582061819596722, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0000009536743
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3688582061819596722, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 27.698658
+      value: 12.31
       objectReference: {fileID: 0}
     - target: {fileID: 3688582061819596722, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -650,7 +658,7 @@ GameObject:
   - component: {fileID: 1362006178}
   m_Layer: 0
   m_Name: Floor
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -732,7 +740,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1468434125
 GameObject:

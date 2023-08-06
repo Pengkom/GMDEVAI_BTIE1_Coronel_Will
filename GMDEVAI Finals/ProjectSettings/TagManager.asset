@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Hide
   - Waypoint
+  - Floor
+  - Zombie
   layers:
   - Default
   - TransparentFX
