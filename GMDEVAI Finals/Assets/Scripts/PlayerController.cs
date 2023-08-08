@@ -2,6 +2,11 @@
 
 public class PlayerController : MonoBehaviour
 {
+    [Header("Testing bullshit")] 
+    public bool canSneak;
+    public bool canThrow;
+
+    [Space]
     [SerializeField] private GameObject sneakText;
 
     [SerializeField] private GameObject stonePrefab;
@@ -24,8 +29,8 @@ public class PlayerController : MonoBehaviour
 
     private void LateUpdate()
     {
-        Sneak();
-        Throw();
+        if(canSneak)Sneak();
+        if(canThrow)Throw();
         WASDMovement();
     }
 
@@ -60,7 +65,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             GameObject stone = Instantiate(stonePrefab, stoneSpawnPoint.position, Quaternion.identity);
-            stone.GetComponent<Rigidbody>().AddForce(transform.forward * 500);
+            stone.GetComponent<Rigidbody>().AddForce(transform.forward * 600);
         }
     }
 }

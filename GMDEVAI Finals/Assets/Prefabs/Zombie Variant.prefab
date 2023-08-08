@@ -97,5 +97,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  detectionRadius: 20
-  runRadius: 10
+  rockDetectionRadius: 20
+  lineOfSightRadius: 0
+  angle: 0
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 0
+  obstructionMask:
+    serializedVersion: 2
+    m_Bits: 0
+  canSeePlayer: 0
