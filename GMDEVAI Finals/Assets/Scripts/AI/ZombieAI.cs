@@ -4,16 +4,19 @@ using UnityEngine.AI;
 public class ZombieAI : MonoBehaviour
 {
     [SerializeField] private GameObject player;
+    private PlayerController playerController;
 
     public float rockDetectionRadius = 5;
 
     [Header("AI LoS")] 
-    public float lineOfSightRadius;
+    public float sightRadius;
     public float angle;
     public LayerMask targetMask;
     public LayerMask obstructionMask;
     public bool canSeePlayer;
 
+    private float defaultSightRadius;
+    private float debuffedSightRadius;
     private NavMeshAgent agent;
     private Animator animator;
 
@@ -26,19 +29,24 @@ public class ZombieAI : MonoBehaviour
     {
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
+        playerController = player.GetComponent<PlayerController>();
+            
+        defaultSightRadius = sightRadius;
+        debuffedSightRadius = defaultSightRadius / 2;
     }
 
     private void Update()
     {
         animator.SetFloat("Distance", Vector3.Distance(this.transform.position, player.transform.position));
-        
+
+        SneakDebuff();
         CheckView();
         animator.SetBool("PlayerDetected", canSeePlayer);
     }
     
     private void CheckView()
     {
-        Collider[] rangeChecks = Physics.OverlapSphere(this.transform.position, lineOfSightRadius, targetMask);
+        Collider[] rangeChecks = Physics.OverlapSphere(this.transform.position, sightRadius, targetMask);
 
         if (rangeChecks.Length != 0)
         {
@@ -53,10 +61,7 @@ public class ZombieAI : MonoBehaviour
                 {
                     canSeePlayer = true;
                 }
-                else
-                {
-                    canSeePlayer = false;
-                }
+                else canSeePlayer = false;
             }
         }
         // else if(canSeePlayer)
@@ -64,6 +69,16 @@ public class ZombieAI : MonoBehaviour
         //     canSeePlayer = false;
         // }
     }
+
+    private void SneakDebuff()
+    {
+        if (playerController.sneaking)
+        {
+            sightRadius = debuffedSightRadius;
+        }
+        else sightRadius = defaultSightRadius;
+    }
+    
     
     //Stone Throw
     public void DetectNewTarget(Vector3 location)
