@@ -13,6 +13,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/NPCBaseFSM.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/ZombieAI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/HealthComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ObstacleSpawner.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -73,7 +74,8 @@
       <workItem from="1691153903247" duration="2949000" />
       <workItem from="1691515175264" duration="4764000" />
       <workItem from="1691522981285" duration="163000" />
-      <workItem from="1691536693160" duration="4278000" />
+      <workItem from="1691536693160" duration="4368000" />
+      <workItem from="1691548210425" duration="1799000" />
     </task>
     <servers />
   </component>
