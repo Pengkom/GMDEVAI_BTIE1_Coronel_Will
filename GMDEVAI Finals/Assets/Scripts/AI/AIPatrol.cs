@@ -39,7 +39,8 @@ public class AIPatrol : NPCBaseFSM
             Quaternion.LookRotation(direction),
             rotSpeed * Time.deltaTime);
         
-        NPC.transform.Translate(0, 0, Time.deltaTime * speed); 
+        //NPC.transform.Translate(0, 0, Time.deltaTime * speed); 
+        NPCAgent.SetDestination(waypoints[currentWaypoint].transform.position);
     }
     
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)

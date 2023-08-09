@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.Animations;
 
 public class NPCBaseFSM : StateMachineBehaviour
 {
     public GameObject NPC;
+    public NavMeshAgent NPCAgent;
     public GameObject opponent;
     public float speed = 2.0f;
     public float rotSpeed = 1.0f;
@@ -15,5 +17,6 @@ public class NPCBaseFSM : StateMachineBehaviour
     {
         NPC = animator.gameObject;
         opponent = NPC.GetComponent<ZombieAI>().GetPlayer();
+        NPCAgent = NPC.GetComponent<NavMeshAgent>();
     }
 }
