@@ -20,6 +20,8 @@ public class PlayerController : MonoBehaviour
 
     public bool sneaking = false;
     private float sneakSpeed;
+
+    public bool isSafe;
     
     private void Start()
     {
@@ -78,6 +80,22 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("Zombie"))
         {
             transform.position = initialPosition;
+        }
+    }
+
+    void OnTriggerEnter(Collider collider)
+    {
+        if (collider.gameObject.CompareTag("Safe Zone"))
+        {
+            isSafe = true;
+        }
+    }
+
+    void OnTriggerExit(Collider collider)
+    {
+        if (collider.CompareTag("Safe Zone"))
+        {
+            isSafe = false;
         }
     }
 }

@@ -8,6 +8,7 @@ TagManager:
   - Waypoint
   - Floor
   - Zombie
+  - Safe Zone
   layers:
   - Default
   - TransparentFX

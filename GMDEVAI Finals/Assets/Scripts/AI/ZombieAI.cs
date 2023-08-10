@@ -51,7 +51,9 @@ public class ZombieAI : MonoBehaviour
         animator.SetBool("PlayerDetected", canSeePlayer);
         animator.SetBool("RockDetected", rockDetected);
         // ==========================
-        
+
+        animator.SetBool("PlayerSafe", player.GetComponent<PlayerController>().isSafe);
+
         ResetTarget();
     }
     
