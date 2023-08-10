@@ -15,7 +15,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float rotationSpeed;
     [SerializeField] private float defaultSpeed;
     [SerializeField] private float currentSpeed;
-    
+
+    private Vector3 initialPosition;
+
     public bool sneaking = false;
     private float sneakSpeed;
     
@@ -23,6 +25,8 @@ public class PlayerController : MonoBehaviour
     {
         Application.targetFrameRate = 60;
         
+        initialPosition = transform.position;
+
         currentSpeed = defaultSpeed;
         sneakSpeed = defaultSpeed / 2;
     }
@@ -66,6 +70,14 @@ public class PlayerController : MonoBehaviour
         {
             GameObject stone = Instantiate(stonePrefab, stoneSpawnPoint.position, Quaternion.identity);
             stone.GetComponent<Rigidbody>().AddForce(transform.forward * 600);
+        }
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Zombie"))
+        {
+            transform.position = initialPosition;
         }
     }
 }

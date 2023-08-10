@@ -10,7 +10,6 @@ public class ObstacleSpawner : MonoBehaviour
     [SerializeField] private GameObject obstaclePrefab;
 
     [SerializeField] private GameObject interactText;
-    [SerializeField] private GameObject stepText;
 
     private bool playerInCollider;
     private bool spawnObstacle;
@@ -31,12 +30,7 @@ public class ObstacleSpawner : MonoBehaviour
         if (spawnObstacle && !isSpawned)
         {
             interactText.SetActive(false);
-            stepText.SetActive(true);
-
-            if (!playerInCollider)
-            {
-                SpawnObstacle();
-            }
+            SpawnObstacle();
         }
     }
 
@@ -55,7 +49,6 @@ public class ObstacleSpawner : MonoBehaviour
     private void SpawnObstacle()
     {
         currentObstacle = Instantiate(obstaclePrefab, obstacleSpawnPoint.transform.position, Quaternion.identity);
-        stepText.SetActive(false);
         meshRenderer.enabled = false;
         isSpawned = true;
     }

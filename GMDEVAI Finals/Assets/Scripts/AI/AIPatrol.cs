@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -36,8 +34,8 @@ public class AIPatrol : NPCBaseFSM
 
         var direction = waypoints[currentWaypoint].transform.position - NPC.transform.position;
         NPC.transform.rotation = Quaternion.Slerp(NPC.transform.rotation, 
-            Quaternion.LookRotation(direction),
-            rotSpeed * Time.deltaTime);
+                                 Quaternion.LookRotation(direction),
+                                 rotSpeed * Time.deltaTime);
         
         //NPC.transform.Translate(0, 0, Time.deltaTime * speed); 
         NPCAgent.SetDestination(waypoints[currentWaypoint].transform.position);
