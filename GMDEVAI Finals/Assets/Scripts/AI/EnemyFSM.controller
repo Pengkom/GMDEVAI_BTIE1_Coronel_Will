@@ -169,7 +169,7 @@ MonoBehaviour:
   NPC: {fileID: 0}
   NPCAgent: {fileID: 0}
   opponent: {fileID: 0}
-  speed: 8
+  speed: 6
   rotSpeed: 20
   accuracy: 1
 --- !u!1102 &-2838215695931141255
@@ -260,8 +260,8 @@ MonoBehaviour:
   NPC: {fileID: 0}
   NPCAgent: {fileID: 0}
   opponent: {fileID: 0}
-  speed: 6
-  rotSpeed: 4
+  speed: 3
+  rotSpeed: 3
   accuracy: 1
 --- !u!114 &1082836114615213667
 MonoBehaviour:
@@ -278,8 +278,8 @@ MonoBehaviour:
   NPC: {fileID: 0}
   NPCAgent: {fileID: 0}
   opponent: {fileID: 0}
-  speed: 8
-  rotSpeed: 6
+  speed: 5
+  rotSpeed: 5
   accuracy: 1
 --- !u!114 &2780603454719440715
 MonoBehaviour:

@@ -6,6 +6,7 @@ public class AIChase : NPCBaseFSM
     {
         base.OnStateEnter(animator, stateInfo, layerIndex);
         NPCAgent.ResetPath();
+        NPCAgent.speed = speed;
     }
 
     public override void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)

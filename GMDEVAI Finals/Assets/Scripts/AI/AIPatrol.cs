@@ -15,6 +15,7 @@ public class AIPatrol : NPCBaseFSM
     {
         base.OnStateEnter(animator, stateInfo, layerIndex);
         currentWaypoint = Random.Range(0, waypoints.Length);
+        NPCAgent.speed = speed;
     }
     
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)

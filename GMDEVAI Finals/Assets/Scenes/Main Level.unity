@@ -430,7 +430,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: angle
-      value: 180
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: player
@@ -438,7 +438,7 @@ PrefabInstance:
       objectReference: {fileID: 1977444047}
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: sightRadius
-      value: 8
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: targetMask.m_Bits
@@ -446,7 +446,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: rockDetectionRadius
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: obstructionMask.m_Bits
@@ -1310,7 +1310,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: angle
-      value: 180
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: player
@@ -1318,7 +1318,7 @@ PrefabInstance:
       objectReference: {fileID: 1977444047}
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: sightRadius
-      value: 8
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: targetMask.m_Bits
@@ -1326,7 +1326,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: rockDetectionRadius
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: obstructionMask.m_Bits
@@ -1796,7 +1796,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: angle
-      value: 180
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: player
@@ -1804,7 +1804,7 @@ PrefabInstance:
       objectReference: {fileID: 1977444047}
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: sightRadius
-      value: 8
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: targetMask.m_Bits
@@ -1812,7 +1812,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: rockDetectionRadius
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: obstructionMask.m_Bits
@@ -5783,7 +5783,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: angle
-      value: 180
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: player
@@ -5791,7 +5791,7 @@ PrefabInstance:
       objectReference: {fileID: 1977444047}
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: sightRadius
-      value: 8
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: targetMask.m_Bits
@@ -5799,7 +5799,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: rockDetectionRadius
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: obstructionMask.m_Bits
@@ -8276,7 +8276,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: angle
-      value: 180
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: player
@@ -8284,7 +8284,7 @@ PrefabInstance:
       objectReference: {fileID: 1977444047}
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: sightRadius
-      value: 8
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: targetMask.m_Bits
@@ -8292,7 +8292,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: rockDetectionRadius
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: obstructionMask.m_Bits
@@ -8695,7 +8695,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: angle
-      value: 180
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: player
@@ -8703,7 +8703,7 @@ PrefabInstance:
       objectReference: {fileID: 1977444047}
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: sightRadius
-      value: 8
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: targetMask.m_Bits
@@ -8711,7 +8711,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: rockDetectionRadius
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: obstructionMask.m_Bits
@@ -9815,7 +9815,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: angle
-      value: 180
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: player
@@ -9823,7 +9823,7 @@ PrefabInstance:
       objectReference: {fileID: 1977444047}
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: sightRadius
-      value: 8
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: targetMask.m_Bits
@@ -9831,7 +9831,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: rockDetectionRadius
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: obstructionMask.m_Bits
@@ -15090,7 +15090,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: angle
-      value: 180
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: player
@@ -15098,7 +15098,7 @@ PrefabInstance:
       objectReference: {fileID: 1977444047}
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: sightRadius
-      value: 8
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: targetMask.m_Bits
@@ -15106,7 +15106,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: rockDetectionRadius
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: obstructionMask.m_Bits
@@ -15519,7 +15519,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: angle
-      value: 180
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: player
@@ -15527,7 +15527,7 @@ PrefabInstance:
       objectReference: {fileID: 1977444047}
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: sightRadius
-      value: 8
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: targetMask.m_Bits
@@ -15535,7 +15535,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: rockDetectionRadius
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: obstructionMask.m_Bits
@@ -15885,7 +15885,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: angle
-      value: 180
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: player
@@ -15893,7 +15893,7 @@ PrefabInstance:
       objectReference: {fileID: 1977444047}
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: sightRadius
-      value: 8
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: targetMask.m_Bits
@@ -15901,7 +15901,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: rockDetectionRadius
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: obstructionMask.m_Bits
@@ -16080,6 +16080,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2009172348271910537, guid: eb4a328115b460445b5f5ce3474f46f2, type: 3}
       propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2009172348271910537, guid: eb4a328115b460445b5f5ce3474f46f2, type: 3}
+      propertyPath: m_CollisionDetection
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4700853188478218574, guid: eb4a328115b460445b5f5ce3474f46f2, type: 3}
@@ -17059,7 +17063,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: angle
-      value: 180
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: player
@@ -17067,7 +17071,7 @@ PrefabInstance:
       objectReference: {fileID: 1977444047}
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: sightRadius
-      value: 8
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: targetMask.m_Bits
@@ -17075,7 +17079,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: rockDetectionRadius
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 833126998061908564, guid: e46690baf0e8a3446be85a10c42bdf1a, type: 3}
       propertyPath: obstructionMask.m_Bits
