@@ -58,14 +58,22 @@ public class ObstacleSpawner : MonoBehaviour
         stepText.SetActive(false);
         meshRenderer.enabled = false;
         isSpawned = true;
+
+        StartCoroutine(CO_Destroy());
     }
 
     private void ResetObstacle()
     {
-        //TODO: Make Timer to despawn Obstacle ============================================================
-        
+        Destroy(currentObstacle);
+
         meshRenderer.enabled = true;
         spawnObstacle = false;
         isSpawned = false;
+    }
+
+    private IEnumerator CO_Destroy()
+    {
+        yield return new WaitForSeconds(5f);
+        ResetObstacle();
     }
 }
