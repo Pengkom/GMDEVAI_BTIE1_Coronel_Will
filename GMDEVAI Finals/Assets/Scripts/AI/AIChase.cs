@@ -5,10 +5,7 @@ public class AIChase : NPCBaseFSM
     public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         base.OnStateEnter(animator, stateInfo, layerIndex);
-        
-        //========================
         NPCAgent.ResetPath();
-        //========================
     }
 
     public override void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
@@ -20,5 +17,9 @@ public class AIChase : NPCBaseFSM
         
         //NPC.transform.Translate(0, 0, Time.deltaTime * speed);
         NPCAgent.SetDestination(opponent.transform.position);
+        
+        //========================
+        opponent.GetComponent<PlayerController>().beingChased = true;
+        //========================
     }
 }

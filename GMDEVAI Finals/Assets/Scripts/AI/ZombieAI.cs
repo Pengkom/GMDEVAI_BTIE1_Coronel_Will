@@ -6,7 +6,6 @@ public class ZombieAI : MonoBehaviour
     [SerializeField] private GameObject player;
     private PlayerController playerController;
     
-
     public float rockDetectionRadius = 5;
 
     [Header("AI LoS")] 
@@ -48,6 +47,7 @@ public class ZombieAI : MonoBehaviour
         // TESTING
         if (!rockDetected) CheckView();
         else canSeePlayer = false;
+        
         animator.SetBool("PlayerDetected", canSeePlayer);
         animator.SetBool("RockDetected", rockDetected);
         // ==========================
@@ -77,10 +77,10 @@ public class ZombieAI : MonoBehaviour
                 else canSeePlayer = false;
             }
         }
-        // else if(canSeePlayer)
-        // {
-        //     canSeePlayer = false;
-        // }
+        else if(canSeePlayer)
+        {
+            canSeePlayer = false;
+        }
     }
     
     private void SneakDebuff()

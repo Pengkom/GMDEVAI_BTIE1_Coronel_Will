@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class PlayerController : MonoBehaviour
 
     [Space]
     [SerializeField] private GameObject sneakText;
+    [SerializeField] private GameObject chaseText;
 
     [SerializeField] private GameObject stonePrefab;
     [SerializeField] private Transform stoneSpawnPoint;
@@ -22,6 +24,7 @@ public class PlayerController : MonoBehaviour
     private float sneakSpeed;
 
     public bool isSafe;
+    public bool beingChased = false;
     
     private void Start()
     {
@@ -38,8 +41,43 @@ public class PlayerController : MonoBehaviour
         if(canSneak)Sneak();
         if(canThrow)Throw();
         WASDMovement();
+
+        if (beingChased) StartCoroutine(CO_ChasedText());
+    }
+    
+    private IEnumerator CO_ChasedText()
+    {
+        chaseText.SetActive(true);
+        yield return new WaitForSeconds(2f);
+        
+        beingChased = false;
+        chaseText.SetActive(false);
+    }
+    
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Zombie"))
+        {
+            transform.position = initialPosition;
+        }
     }
 
+    void OnTriggerEnter(Collider collider)
+    {
+        if (collider.gameObject.CompareTag("Safe Zone"))
+        {
+            isSafe = true;
+        }
+    }
+
+    void OnTriggerExit(Collider collider)
+    {
+        if (collider.CompareTag("Safe Zone"))
+        {
+            isSafe = false;
+        }
+    }
+    
     private void WASDMovement()
     {
         transform.Rotate(0, Input.GetAxis("Mouse X") * rotationSpeed, 0);
@@ -72,30 +110,6 @@ public class PlayerController : MonoBehaviour
         {
             GameObject stone = Instantiate(stonePrefab, stoneSpawnPoint.position, Quaternion.identity);
             stone.GetComponent<Rigidbody>().AddForce(transform.forward * 600);
-        }
-    }
-
-    void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Zombie"))
-        {
-            transform.position = initialPosition;
-        }
-    }
-
-    void OnTriggerEnter(Collider collider)
-    {
-        if (collider.gameObject.CompareTag("Safe Zone"))
-        {
-            isSafe = true;
-        }
-    }
-
-    void OnTriggerExit(Collider collider)
-    {
-        if (collider.CompareTag("Safe Zone"))
-        {
-            isSafe = false;
         }
     }
 }
