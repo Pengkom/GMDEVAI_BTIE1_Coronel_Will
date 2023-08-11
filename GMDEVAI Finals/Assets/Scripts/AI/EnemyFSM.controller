@@ -169,8 +169,8 @@ MonoBehaviour:
   NPC: {fileID: 0}
   NPCAgent: {fileID: 0}
   opponent: {fileID: 0}
-  speed: 3
-  rotSpeed: 10
+  speed: 8
+  rotSpeed: 20
   accuracy: 1
 --- !u!1102 &-2838215695931141255
 AnimatorState:
@@ -260,8 +260,8 @@ MonoBehaviour:
   NPC: {fileID: 0}
   NPCAgent: {fileID: 0}
   opponent: {fileID: 0}
-  speed: 3
-  rotSpeed: 3
+  speed: 6
+  rotSpeed: 4
   accuracy: 1
 --- !u!114 &1082836114615213667
 MonoBehaviour:
@@ -278,7 +278,7 @@ MonoBehaviour:
   NPC: {fileID: 0}
   NPCAgent: {fileID: 0}
   opponent: {fileID: 0}
-  speed: 3
+  speed: 8
   rotSpeed: 6
   accuracy: 1
 --- !u!114 &2780603454719440715
