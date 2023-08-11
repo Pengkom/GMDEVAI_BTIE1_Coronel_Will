@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float defaultSpeed;
     [SerializeField] private float currentSpeed;
 
-    private Vector3 initialPosition;
+    public Vector3 checkpoint;
 
     public bool sneaking = false;
     private float sneakSpeed;
@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
     {
         Application.targetFrameRate = 60;
         
-        initialPosition = transform.position;
+        checkpoint = transform.position;
 
         currentSpeed = defaultSpeed;
         sneakSpeed = defaultSpeed / 2;
@@ -58,7 +58,7 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Zombie"))
         {
-            transform.position = initialPosition;
+            transform.position = checkpoint;
         }
     }
 
