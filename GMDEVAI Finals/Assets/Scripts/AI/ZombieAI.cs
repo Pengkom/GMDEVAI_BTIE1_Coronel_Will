@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -17,7 +18,8 @@ public class ZombieAI : MonoBehaviour
 
     private float defaultSightRadius;
     private float debuffedSightRadius;
-    private NavMeshAgent agent;
+
+    public NavMeshAgent agent;
     private Animator animator;
 
     public bool rockDetected = false;
@@ -53,8 +55,6 @@ public class ZombieAI : MonoBehaviour
         // ==========================
 
         animator.SetBool("PlayerSafe", player.GetComponent<PlayerController>().isSafe);
-
-        ResetTarget();
     }
     
     private void CheckView() // Line of Sight
@@ -99,33 +99,30 @@ public class ZombieAI : MonoBehaviour
         {
             path = new NavMeshPath();
             agent.CalculatePath(location, path);
-            
+
             if (path.status != NavMeshPathStatus.PathInvalid)
             {
-                //==========================
-                agent.ResetPath();
-                //==========================
-                
-                agent.SetDestination(path.corners[path.corners.Length - 1]);
-                
-                //==========================
                 rockDetected = true;
                 canSeePlayer = false;
-                //==========================
             }
-
         }
     }
 
-    //==========================
-    private void ResetTarget()
+    public void MoveToTarget()
     {
-        if (rockDetected && agent.remainingDistance < 1f)
-        {
-            agent.ResetPath();
-            rockDetected = false;
-        }
+        agent.SetDestination(path.corners[path.corners.Length - 1]);
     }
-    //==========================
+
+    public void ResetTarget()
+    {
+        StartCoroutine(CO_ResetTarget());
+    }
+
+    private IEnumerator CO_ResetTarget()
+    {
+        yield return new WaitForSeconds(2.0f);
+        agent.ResetPath();
+        rockDetected = false;
+    }
     #endregion
 }

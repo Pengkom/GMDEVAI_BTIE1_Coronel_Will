@@ -11,12 +11,13 @@ public class AIRock : NPCBaseFSM
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         base.OnStateUpdate(animator, stateInfo, layerIndex);
-        var currentPath = NPC.GetComponent<ZombieAI>().path;
-        
-        var direction = currentPath.corners[currentPath.corners.Length - 1] - NPC.transform.position;
-        NPC.transform.rotation = Quaternion.Slerp(NPC.transform.rotation, 
-                                 Quaternion.LookRotation(direction),
-                                 rotSpeed * Time.deltaTime);
+
+        NPC.GetComponent<ZombieAI>().MoveToTarget();
+
+        if (NPC.GetComponent<ZombieAI>().agent.remainingDistance < 1)
+        {
+            NPC.GetComponent<ZombieAI>().ResetTarget();
+        }
     }
     
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
